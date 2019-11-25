@@ -18,8 +18,8 @@ public class Reader {
             String line = sc.nextLine();
             String[] fields = line.split(",");
             String fullName = fields[0] +" "+ fields[1];
-            String city = fields[2];
-            String email = fields[3];
+            String city = fields[4];
+            String email = fields[10];
             Person person = new Person(fullName,city,email);
             peopleList.add(person);
         }
