@@ -3,15 +3,15 @@ package com.company;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
 public class Reader {
 
+    private ArrayList<Person> peopleList = new ArrayList<>();
 
-    public static ArrayList<Person> read() throws FileNotFoundException {
-        ArrayList<Person> peopleList = new ArrayList<>();
+    public static ArrayList<Person> read(ArrayList<Person> peopleList) throws FileNotFoundException {
+
         Scanner sc = new Scanner(new File("src/us-500.csv"));
         while (sc.hasNext()) {
             String line = sc.nextLine();
