@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Comparator;
+
 public class Person {
 
     private String fullName;
@@ -23,4 +25,17 @@ public class Person {
     public String getEmail() {
         return email;
     }
+
+    public static Comparator<Person> PersonNameComparator = new Comparator<Person>() {
+
+        public int compare(Person p1, Person p2) {
+            String Name1 = p1.getFullName().toUpperCase();
+            String Name2 = p2.getFullName().toUpperCase();
+
+            //ascending order
+            return Name1.compareTo(Name2);
+
+            //descending order
+            //return StudentName2.compareTo(StudentName1);
+        }};
 }

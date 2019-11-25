@@ -8,9 +8,10 @@ import java.util.Scanner;
 
 public class Reader {
 
-    private ArrayList<Person> peopleList = new ArrayList<>();
+   ArrayList<Person> peopleList = new ArrayList<>();
 
-    public static ArrayList<Person> read(ArrayList<Person> peopleList) throws FileNotFoundException {
+    public static ArrayList<Person> read() throws FileNotFoundException {
+        ArrayList<Person> peopleList = new ArrayList<>();
 
         Scanner sc = new Scanner(new File("src/us-500.csv"));
         while (sc.hasNext()) {
