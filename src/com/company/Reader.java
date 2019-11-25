@@ -8,12 +8,18 @@ import java.util.Scanner;
 
 public class Reader {
 
+<<<<<<< Updated upstream
    ArrayList<Person> peopleList = new ArrayList<>();
 
     public static ArrayList<Person> read() throws FileNotFoundException {
         ArrayList<Person> peopleList = new ArrayList<>();
+=======
+
+    public static ArrayList<Person> read() throws FileNotFoundException {
+>>>>>>> Stashed changes
 
         Scanner sc = new Scanner(new File("src/us-500.csv"));
+        ArrayList<Person> peopleList = new ArrayList<>();
         while (sc.hasNext()) {
             String line = sc.nextLine();
             String[] fields = line.split(",");
