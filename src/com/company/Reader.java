@@ -14,6 +14,7 @@ public class Reader {
 
         ArrayList<Person> peopleList = new ArrayList<>();
         Scanner sc = new Scanner(new File("src/us-500.csv"));
+        ArrayList<Person> peopleList = new ArrayList<>();
         while (sc.hasNext()) {
             String line = sc.nextLine();
             String[] fields = line.split(",");
